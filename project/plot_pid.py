@@ -5,7 +5,7 @@ def read_steer_data():
  steer_file = 'steer_pid_data.txt'
  steer_df = pd.read_csv(steer_file, delim_whitespace = True, header = None, usecols = [0, 1, 2])
  steer_df.columns = ['Iteration', 'Error Steering', 'Steering Output']
- print(f'Steer data:\n{steer_df.head()}\n')
+#  print(f'Steer data:\n{steer_df.head()}\n')
  return steer_df
 
 
@@ -13,7 +13,7 @@ def read_throttle_data():
  throttle_file = 'throttle_pid_data.txt'
  throttle_df = pd.read_csv(throttle_file, delim_whitespace = True, header = None, usecols = [0, 1, 2, 3])
  throttle_df.columns = ['Iteration', 'Error Throttle', 'Brake Output', 'Throttle Output']
- print(f'Throttle data:\n{throttle_df.head()}\n')
+#  print(f'Throttle data:\n{throttle_df.head()}\n')
  return throttle_df
 
 
